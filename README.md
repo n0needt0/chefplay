@@ -1,6 +1,8 @@
 chefplay
 ========
 
+Want to play with chef... here go :)
+
 #chef playground for opensource chef on Vagrant and VIrtual box
 
 This project will install:
@@ -49,9 +51,33 @@ test node is a ubuntu 12.04 image with ssh port 22 forwarded to port 2230 of a h
 
 For this test there is really nothing to confgure. Run as it is and then tweak as you know what buttons to push
 
-#lets run
+#start chef server
 
-cd to chefserv
+cd to chefplay/chefserv
+
+vagrant up
+
+
+this will install chef server (check it is there from your workstation http://chefserver:8888)
+
+#start test node
+
+cd chefplay/chefserv
+
+vagrant up
+
+
+#configure stuff
+
+navigate to http://chefserver:8888, login as the admin user (the default password is shown on a right), and change the default admin password.
+
+Next, regenerate the chef-validator Private Key by going to Clients > chef-validator > Edit, check the Regenerate Private Key box, and click Save Client. Copy the new Private Key to xxxx/chef-repo/.chef/chef-validator.pem on your workstation.
+
+Create a new user on Chef Server by going to Users > Create, check the Admin box, fill out the necessary fields example testuser, and click Create User. Copy the Private Key to xxxx/chef-repo/.chef/testuser.pem
+
+open terminal run 'knife configure'. Fill out the fields, do not accept defaults set your own.
+
+
 
 
 #boot strap your node
