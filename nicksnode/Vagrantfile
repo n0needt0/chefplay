@@ -1,0 +1,15 @@
+Vagrant.configure("2") do |config|
+        config.vm.box = "precise64"
+        config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+        config.vm.provision :shell, :path => "bootstrap.sh"
+        #config.vm.network "forwarded_port", guest: 80, host: 8080
+	config.vm.network "public_network", :bridge => 'eth0'
+	config.vm.network :forwarded_port, guest: 22, host: 2222, id: "ssh", disabled: true
+	config.vm.network :forwarded_port, guest: 22, host: 2240, auto_correct: true
+        config.vm.hostname = "nicksnode"
+
+        config.vm.provider :virtualbox do |vb|
+            vb.customize ["modifyvm", :id, "--memory", 1024]
+            vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+        end
+end
