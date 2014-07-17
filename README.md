@@ -1,3 +1,11 @@
+Author: Andrew Yasinsky
+
+Disclaimer!!!!
+
+no kittens were harmed!
+
+ideas were liberated from [here]  (http://thornelabs.net/2013/09/16/install-the-open-source-chef-server-setup-knife-on-your-workstationand-bootstrap-your-first-client-server.html)
+
 chefplay
 ========
 
@@ -106,9 +114,15 @@ Configuration file written to /home/testuser/chef-repo/.chef/knife.rb
 
 from your workstation go to chef-repo directory. and run
 
-**knife client list** or **knife node list*** to see lists of your registered clients and nodes, respectively.
+**knife client list** or **knife node list** to see lists of your registered clients and nodes, respectively.
 
 
 #boot strap your node
 
-knife bootstrap -p 2230 -x vagrant -P vagrant --sudo YOUR_HOST_IP
+this where fun starts
+
+from workstation chef-repo directory run:
+
+knife bootstrap -p 2230 -x vagrant -P vagrant --sudo HOST-MACHINE-IP
+
+
