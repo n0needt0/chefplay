@@ -102,7 +102,11 @@ Before generating instance data with Knife!
 Configuration file written to /home/testuser/chef-repo/.chef/knife.rb
 ```
 
+#test installation
 
+from your workstation go to chef-repo directory. and run
+
+**knife client list** or **knife node list*** to see lists of your registered clients and nodes, respectively.
 
 
 #boot strap your node
