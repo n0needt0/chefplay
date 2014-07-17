@@ -25,6 +25,16 @@ knife/workstation - usually my laptop that i use to manage chef nodes
 1. install virtualbox and vagrant. (you knew this already :)
 2. git clone this repo to host machine.
 3. to your workstation hosts file add "chefserver  IP OF HOST MACHINE"  entry
+4. on your workstation run: 
+  
+    curl -O -L http://www.opscode.com/chef/install.sh
+
+    sudo sh install.sh
+    
+5. on workstation set up where your chef stuff will be, (you can set up multiple)
+
+    git clone https://github.com/opscode/chef-repo.git
+  
 
 #network layout
 
@@ -37,7 +47,11 @@ test node is a ubuntu 12.04 image with ssh port 22 forwarded to port 2230 of a h
 
 #configuration
 
-For this test 
+For this test there is really nothing to confgure. Run as it is and then tweak as you know what buttons to push
+
+#lets run
+
+cd to chefserv
 
 
 #boot strap your node
