@@ -1,1 +1,0 @@
-knife bootstrap -p 2230 -x andrew -P welcome1 --sudo 10.20.2.85
