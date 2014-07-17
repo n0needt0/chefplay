@@ -77,6 +77,28 @@ Create a new user on Chef Server by going to Users > Create, check the Admin box
 
 open terminal run 'knife configure'. Fill out the fields, do not accept defaults set your own.
 
+here is my test user run:
+
+`
+WARNING: No knife configuration file found
+Where should I put the config file? [/Users/jthorne/.chef/knife.rb] /Users/jthorne/Development/chef-repo/.chef/knife.rb
+Please enter the chef server URL: [https://macbookpro.local:443] https://chef-server.example.com:443
+Please enter an existing username or clientname for the API: [jthorne] 
+Please enter the validation clientname: [chef-validator] 
+Please enter the location of the validation key: [/etc/chef-server/chef-validator.pem] /Users/jthorne/Development/chef-repo/.chef/chef-validator.pem
+Please enter the path to a chef repository (or leave blank): /Users/jthorne/Development/chef-repo
+
+You must place your client key in:
+  /Users/jthorne/Development/chef-repo/.chef/jthorne.pem
+Before running commands with Knife!
+
+You must place your validation key in:
+  /Users/jthorne/Development/chef-repo/.chef/chef-validator.pem
+Before generating instance data with Knife!
+
+Configuration file written to /Users/jthorne/Development/chef-repo/.chef/knife.rb
+`
+
 
 
 
