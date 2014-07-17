@@ -16,5 +16,6 @@ This project is set to install:
 1. install virtualbox and vagrant. (you knew this already :)
 2. git clone this repo
 
+#network layout
 
 
