@@ -4,7 +4,7 @@ Disclaimer!!!!
 
 no kittens were harmed!
 
-ideas were liberated from [here]  (http://thornelabs.net/2013/09/16/install-the-open-source-chef-server-setup-knife-on-your-workstationand-bootstrap-your-first-client-server.html)
+ideas were liberated from [here](http://thornelabs.net/2013/09/16/install-the-open-source-chef-server-setup-knife-on-your-workstation-and-bootstrap-your-first-client-server.html)
 
 chefplay
 ========
